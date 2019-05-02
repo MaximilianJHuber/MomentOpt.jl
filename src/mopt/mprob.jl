@@ -26,7 +26,7 @@ of datamoments `moments`.
     ```
     
 """
-type MProb
+struct MProb
 
   # setup
   initial_value       :: OrderedDict           # initial parameter value as a dict
