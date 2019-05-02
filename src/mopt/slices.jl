@@ -40,7 +40,7 @@ julia> Slice(p,m)
 ```
 
 """
-type Slice
+struct Slice
     res  :: Union{Dict,OrderedDict}    # result
     p0   :: Union{Dict,OrderedDict}    # initial param
     m0   :: Union{Dict,OrderedDict}    # data moments
