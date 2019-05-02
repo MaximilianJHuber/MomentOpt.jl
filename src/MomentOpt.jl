@@ -16,9 +16,10 @@ using Documenter
 using Plots
 using FileIO
 using JLD2
-using StatPlots
+using StatsPlots
 using JSON
 using ProgressMeter
+using Random
 
 gr()
 
@@ -62,7 +63,7 @@ export addParam!,
        mean,median,CI
 
 # create a random device that is immune to seeds
-const RAND = RandomDevice()
+const RAND = Random.RandomDevice()
 
 
 # load files
