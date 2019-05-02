@@ -1,7 +1,7 @@
 
 # TODO
 # add plot slices
-type MyT
+struct MyT
     data :: Dict
 end
 
