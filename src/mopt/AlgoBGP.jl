@@ -39,7 +39,7 @@ MCMC Chain storage for BGP algorithm.
 * `batches`: in the proposal function update the parameter vector in batches. [default: update entire param vector]
 
 """
-type BGPChain <: AbstractChain
+struct BGPChain <: AbstractChain
     evals     :: Array{Eval}
     best_id   :: Vector{Int}   # index of best eval.value so far
     best_val  :: Vector{Float64}   # best eval.value so far
